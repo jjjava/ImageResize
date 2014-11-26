@@ -15,27 +15,27 @@ import javax.imageio.ImageIO;
  */
 public class ImageTest {
 
-    private static final int IMG_WIDTH = 100;
-    private static final int IMG_HEIGHT = 100;
+    private static final int IMG_WIDTH = 200;
+    private static final int IMG_HEIGHT = 200;
 
     public static void main(String[] args) {
 
         try {
 
-            BufferedImage originalImage = ImageIO.read(new File("c:\\image\\mkyong.jpg"));
+            BufferedImage originalImage = ImageIO.read(new File("c:/Work/k1.png"));
             int type = originalImage.getType() == 0 ? BufferedImage.TYPE_INT_ARGB : originalImage.getType();
 
-            BufferedImage resizeImageJpg = resizeImage(originalImage, type);
-            ImageIO.write(resizeImageJpg, "jpg", new File("c:\\image\\mkyong_jpg.jpg"));
-
-            BufferedImage resizeImagePng = resizeImage(originalImage, type);
-            ImageIO.write(resizeImagePng, "png", new File("c:\\image\\mkyong_png.jpg"));
-
-            BufferedImage resizeImageHintJpg = resizeImageWithHint(originalImage, type);
-            ImageIO.write(resizeImageHintJpg, "jpg", new File("c:\\image\\mkyong_hint_jpg.jpg"));
+//            BufferedImage resizeImageJpg = resizeImage(originalImage, type);
+//            ImageIO.write(resizeImageJpg, "jpg", new File("c:/Work/mkyong_jpg.jpg"));
+//
+//            BufferedImage resizeImagePng = resizeImage(originalImage, type);
+//            ImageIO.write(resizeImagePng, "png", new File("c:/Work/mkyong_png.png"));
+//
+//            BufferedImage resizeImageHintJpg = resizeImageWithHint(originalImage, type);
+//            ImageIO.write(resizeImageHintJpg, "jpg", new File("c:/Work/mkyong_hint_jpg.jpg"));
 
             BufferedImage resizeImageHintPng = resizeImageWithHint(originalImage, type);
-            ImageIO.write(resizeImageHintPng, "png", new File("c:\\image\\mkyong_hint_png.jpg"));
+            ImageIO.write(resizeImageHintPng, "png", new File("c:/Work/mkyong_hint_png.png"));
 
         } catch (IOException e) {
             System.out.println(e.getMessage());
