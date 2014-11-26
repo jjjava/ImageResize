@@ -9,14 +9,8 @@ package br.com.schumaker.sandbox.ex4;
  *
  * @author hudson.sales
  */
-import br.com.schumaker.sandbox.ex5.*;
-import br.com.schumaker.sandbox.ex4.FrViewer;
 import java.awt.Image;
-import java.io.IOException;
-import javax.imageio.ImageIO;
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
