@@ -9,6 +9,7 @@ import java.io.FileFilter;
  */
 public class HsFileFilter implements FileFilter {
 
+    @Override
     public boolean accept(File file) {
         return file.getName().endsWith(".TXT") || file.getName().endsWith(".txt");
     }
