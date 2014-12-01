@@ -23,7 +23,7 @@ public class HsFilesLib {
     }
 
     public ArrayList<String> getListFiles() {
-        ArrayList<String> fileList = new ArrayList<String>();
+        ArrayList<String> fileList = new ArrayList<>();
         File folder = new File(Properties.getInstance().getOriginPath());
         File files[] = folder.listFiles(new HsFileFilter());
         for (File file : files) {

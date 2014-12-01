@@ -7,6 +7,11 @@ import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 
+/**
+ *
+ * @author Hudson Schumaker
+ */
+
 public class CustomScrollPane extends JPanel {
 
     protected JScrollBar verticalBar = new JScrollBar(JScrollBar.VERTICAL, 0, 0, 0, 0);
@@ -65,8 +70,7 @@ public class CustomScrollPane extends JPanel {
         Dimension innerComponmentSize = innerComponent.getPreferredSize();
         Dimension verticalBarSize = verticalBar.getPreferredSize();
         Dimension d2 = horizontalBar.getPreferredSize();
-        Dimension horizontalBarSize = new Dimension(innerComponmentSize.width
-                + verticalBarSize.width, innerComponmentSize.height + d2.height);
+        Dimension horizontalBarSize = new Dimension(innerComponmentSize.width + verticalBarSize.width, innerComponmentSize.height + d2.height);
         return horizontalBarSize;
     }
 
@@ -81,8 +85,7 @@ public class CustomScrollPane extends JPanel {
             Dimension innerComponentSize = innerComponent.getPreferredSize();
             int x = horizontalBar.getValue();
             int y = verticalBar.getValue();
-            innerComponent.setBounds(-x, -y, innerComponentSize.width,
-                    innerComponentSize.height);
+            innerComponent.setBounds(-x, -y, innerComponentSize.width, innerComponentSize.height);
         }
     }
 }
