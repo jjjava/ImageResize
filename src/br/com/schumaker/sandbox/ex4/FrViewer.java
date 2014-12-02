@@ -1,8 +1,6 @@
 package br.com.schumaker.sandbox.ex4;
 
-import java.awt.Canvas;
 import java.awt.Image;
-import javax.swing.Box;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
@@ -25,7 +23,7 @@ public class FrViewer extends javax.swing.JFrame {
     }
 
     public void draw(Image image) {
-         System.out.println(image.getWidth(this));
+        System.out.println(image.getWidth(this));
         ImageIcon ii = new ImageIcon(image);
         jsp = new JScrollPane(new JLabel(ii));
         getContentPane().add(jsp);

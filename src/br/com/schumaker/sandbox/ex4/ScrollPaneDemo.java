@@ -18,7 +18,7 @@ import javax.swing.JScrollPane;
 public class ScrollPaneDemo extends JFrame {
 
     public ScrollPaneDemo(Image image) {
-        super("JScrollPane Demo");
+        super("JScrollPane Demo esse!");
         ImageIcon ii = new ImageIcon(image);
         JScrollPane jsp = new JScrollPane(new JLabel(ii));
         getContentPane().add(jsp);
